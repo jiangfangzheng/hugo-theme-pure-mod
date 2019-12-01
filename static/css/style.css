@@ -455,7 +455,8 @@ h6 .small,
 
 h1,
 .h1 {
-  font-size: 30px;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 h2,
@@ -3260,7 +3261,7 @@ body {
   padding-right: 0 !important;
   font-family: "PingHei", "PingFang SC", Helvetica Neue, "Work Sans",
     "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.57143;
   color: #333333;
   background-color: #fff;
@@ -3320,6 +3321,7 @@ video,
 svg {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 /*------------------ clear ------------------------------*/
@@ -4756,7 +4758,7 @@ a.label:focus {
 }
 
 .panel-body {
-  padding: 15px;
+  padding: 0px;
 }
 
 .panel-body:before,
@@ -6595,6 +6597,10 @@ body.no-sidebar .sidebar {
   padding-bottom: 0.3em;
   font-size: 1.5em;
   border-bottom: 1px solid #f2f2f2;
+}
+
+.marked-body p {
+  text-indent: 2em;
 }
 
 .marked-body a {
