@@ -188,7 +188,11 @@ params:
     - tag
     - recent_posts
 
+# markdown中可以使用HTML标签，自己的博客不担心不安全
 markup:
   goldmark:
     renderer:
       unsafe: true
+
+# 解决代码高亮黑边问题 https://github.com/xiaoheiAh/hugo-theme-pure/issues/56
+PygmentsCodeFences: false
