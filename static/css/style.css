@@ -6518,6 +6518,7 @@ body.no-sidebar .sidebar {
   -webkit-transition: 0.25s;
   transition: 0.25s;
   color: #777777;
+  margin-left: 1em;
 }
 
 .collection a:not(.active):hover {
