@@ -4758,7 +4758,7 @@ a.label:focus {
 }
 
 .panel-body {
-  padding: 0px;
+  padding: 10px;
 }
 
 .panel-body:before,
