@@ -6,6 +6,7 @@ footnoteReturnLinkContents: ↩
 hasCJKLanguage: true
 paginate: 7
 enableEmoji: true
+PygmentsCodeFences: false
 googleAnalytics: ""      # UA-XXXXXXXX-X 
 permalinks:
   posts: /:year/:month/:filename/
@@ -20,7 +21,7 @@ outputFormats:          # use for search. recommend not to modify
     baseName: "searchindex"
     isPlainText: true
     notAlternative: true
-    
+
 outputs:
     home: ["HTML","RSS","SearchIndex"]  # recommend not to modify
 # sitemap
@@ -33,32 +34,32 @@ menu:
   main:
     - identifier: home
       name: Home
-      title: Home 
+      title: Home
       url: /
       weight: 1
 
     - identifier: archives
       name: Archives
       title: Archives
-      url: /posts
+      url: /posts/
       weight: 2
 
     - identifier: categories
       name: Categories
       title: Categories
-      url: /categories
+      url: /categories/
       weight: 3
 
     - identifier: tags
       name: Tags
       title: Tags
-      url: /tags
+      url: /tags/
       weight: 4
 
     - identifier: about
       name: About
       title: About
-      url: /about
+      url: /about/
       weight: 5
 
 
@@ -73,7 +74,11 @@ params:
   enableMathJax: true #Enable mathjax support, to use mathematical notations
   highlightjs:
     langs: ["python", "javascript"] # refer to http://staticfile.org/, search highlight.js, already have highlight.min.js
-    
+
+  # Allows you to specify an override stylesheet
+  # put custom.css in $hugo_root_dir/static/
+  # customCSS: css/custom.css
+
   menuIcons:
     enable: true  # 是否启用导航菜单图标
     home: icon-home-fill
@@ -172,7 +177,7 @@ params:
 
   # config
   config:
-    skin: # theme color default is white. other type [theme-black,theme-blue,theme-green,theme-purple]
+    skin: theme-black # theme color default is white. other type [theme-black,theme-blue,theme-green,theme-purple]
     layout: main-center # main-left main-center main-right
     excerpt_link: Read More
     toc: true
